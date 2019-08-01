@@ -73,13 +73,13 @@ class _VideoPlayPauseState extends State<VideoPlayPause> {
           }
         },
       ),
-      Align(
-        alignment: Alignment.bottomCenter,
-        child: VideoProgressIndicator(
-          controller,
-          allowScrubbing: true,
-        ),
-      ),
+//      Align(
+//        alignment: Alignment.bottomCenter,
+//        child: VideoProgressIndicator(
+//          controller,
+//          allowScrubbing: true,
+//        ),
+//      ),
       Center(child: imageFadeAnim),
       Center(
           child: controller.value.isBuffering
@@ -390,7 +390,8 @@ void main() {
                     Container(
                       padding: const EdgeInsets.all(20),
                       child: NetworkPlayerLifeCycle(
-                        'http://184.72.239.149/vod/smil:BigBuckBunny.smil/playlist.m3u8',
+//                        'http://184.72.239.149/vod/smil:BigBuckBunny.smil/playlist.m3u8',
+                        'https://alicdn.yxgapp.com/miniVideos/7eaac989-658d-4dd7-bab3-89dec9e7891c.mp4',
                         (BuildContext context,
                                 VideoPlayerController controller) =>
                             AspectRatioVideo(controller),
